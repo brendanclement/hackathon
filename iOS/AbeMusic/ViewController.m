@@ -35,22 +35,25 @@
         [allSongs addObject:[NSDictionary dictionaryWithObjectsAndKeys:[song valueForProperty:MPMediaItemPropertyTitle], @"title", [song valueForProperty:MPMediaItemPropertyArtist], @"artist", nil]];
     }
     
-    NSError *error;
-    json = [NSJSONSerialization dataWithJSONObject:allSongs options:NSJSONWritingPrettyPrinted error:&error];
-    
-    NSDictionary *parameters = [NSDictionary dictionaryWithObject:json forKey:@"AllSongs"];
-    
-//    FSNConnection *connection = [FSNConnection withUrl:nil
+//    NSError *error;
+//    json = [NSJSONSerialization dataWithJSONObject:allSongs options:NSJSONWritingPrettyPrinted error:&error];
+//    NSString *jsonString = [[NSString alloc] initWithData:json encoding:NSStringEncodingConversionAllowLossy];
+//    
+//    NSDictionary *parameters = [NSDictionary dictionaryWithObject:jsonString forKey:@"songs"];
+//    
+//    FSNConnection *connection = [FSNConnection withUrl:[NSURL URLWithString:@"http://abemusic.elasticbeanstalk.com/index.php/music/upload_songs"]
 //                                                method:FSNRequestMethodPOST
 //                                               headers:nil
 //                                            parameters:parameters
 //                                            parseBlock:nil
-//                                       completionBlock:nil
+//                                       completionBlock:^(FSNConnection *c) {
+//                                           NSLog(@"complete: %@\n  error: %@\n  parseResult: %@\n", c, c.error, c.parseResult);
+//                                       }
 //                                         progressBlock:nil];
-    /*^(FSNConnection *c) {
-     NSLog(@"complete: %@\n  error: %@\n  parseResult: %@\n", c, c.error, c.parseResult);
-     }*/
-    
+//    /*^(FSNConnection *c) {
+//     NSLog(@"complete: %@\n  error: %@\n  parseResult: %@\n", c, c.error, c.parseResult);
+//     }*/
+//    
 //    [connection start];
     
 }

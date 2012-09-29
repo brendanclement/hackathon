@@ -15,6 +15,7 @@
 @property (nonatomic, weak) IBOutlet UIButton *rewindButton;
 @property (nonatomic, weak) IBOutlet UIButton *fastForwardButton;
 @property (weak, nonatomic) IBOutlet UIImageView *albumArtImageView;
+@property (weak, nonatomic) IBOutlet UIView *songControl;
 
 @property (nonatomic, strong) NSString *location;
 @property (nonatomic, strong) NSMutableArray *songQueue;
