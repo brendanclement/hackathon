@@ -32,6 +32,10 @@ public class SongSearcher {
         System.out.printf("   A hot : %.3f\n", song.getArtistHotttnesss());
         System.out.printf("   A fam : %.3f\n", song.getArtistFamiliarity());
         System.out.printf("   A loc : %s\n", song.getArtistLocation());
+        System.out.printf("   tempo : %s\n", song.getTempo());
+        System.out.printf("   loudness : %s\n", song.getLoudness());
+        System.out.printf("   energy : %s\n", song.getEnergy());
+        System.out.printf("   danceability : %s\n", song.getDanceability());
         System.out.printf("   ID : %s\n", song.getID());
     }
 
@@ -95,6 +99,29 @@ public class SongSearcher {
             dumpSong(song);
             System.out.println();
         }
+    }
+    
+    public Song searchSongByTitleAndArtist(String title, String artist)
+    	throws EchoNestException
+    {
+    	ArtistParams ap = new ArtistParams();
+        ap.addName(artist);
+        System.out.println("searching artist");
+        List<Artist> artists = en.searchArtists(ap);
+        if (artists.size() > 0) {
+	    	Params p = new Params();
+	    	p.add("artist_id", artists.get(0).getID());
+	        p.add("title", title);
+	        p.add("results", 1);
+	        System.out.println("searching song");
+	        List<Song> songs = en.searchSongs(p);
+	        if(songs.size() > 0)
+	        {
+	        	System.out.println("Found song");
+	        	return songs.get(0);
+	        }
+        }
+        return null;
     }
 
     public Double getTempo(String artistName, String title)
