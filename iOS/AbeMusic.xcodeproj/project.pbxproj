@@ -27,6 +27,8 @@
 		09929A3D16168CC7002D900B /* FSN_categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 09929A3816168CC7002D900B /* FSN_categories.m */; };
 		09929A3E16168CC7002D900B /* FSNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 09929A3A16168CC7002D900B /* FSNConnection.m */; };
 		09929A3F16168CC7002D900B /* FSNData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09929A3C16168CC7002D900B /* FSNData.m */; };
+		09D48E6A1616BE7D0088A3A1 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D48E671616BE7D0088A3A1 /* NSString+MD5Addition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09D48E6B1616BE7D0088A3A1 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D48E691616BE7D0088A3A1 /* UIDevice+IdentifierAddition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,10 @@
 		09929A3A16168CC7002D900B /* FSNConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNConnection.m; path = src/FSNConnection.m; sourceTree = "<group>"; };
 		09929A3B16168CC7002D900B /* FSNData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSNData.h; path = src/FSNData.h; sourceTree = "<group>"; };
 		09929A3C16168CC7002D900B /* FSNData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNData.m; path = src/FSNData.m; sourceTree = "<group>"; };
+		09D48E661616BE7D0088A3A1 /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5Addition.h"; path = "udid/NSString+MD5Addition.h"; sourceTree = "<group>"; };
+		09D48E671616BE7D0088A3A1 /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5Addition.m"; path = "udid/NSString+MD5Addition.m"; sourceTree = "<group>"; };
+		09D48E681616BE7D0088A3A1 /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+IdentifierAddition.h"; path = "udid/UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		09D48E691616BE7D0088A3A1 /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+IdentifierAddition.m"; path = "udid/UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,7 @@
 				0986E11D16166A8800CF7A2D /* ViewController.m */,
 				09929A23161675AE002D900B /* MusicPlayerViewController.h */,
 				09929A24161675AE002D900B /* MusicPlayerViewController.m */,
+				09D48E641616BE6D0088A3A1 /* UDID */,
 				09929A4016168CC9002D900B /* networking */,
 				09929A2916167BE1002D900B /* Resources */,
 				0986E10816166A8800CF7A2D /* Supporting Files */,
@@ -165,6 +172,17 @@
 				09929A3C16168CC7002D900B /* FSNData.m */,
 			);
 			name = networking;
+			sourceTree = "<group>";
+		};
+		09D48E641616BE6D0088A3A1 /* UDID */ = {
+			isa = PBXGroup;
+			children = (
+				09D48E661616BE7D0088A3A1 /* NSString+MD5Addition.h */,
+				09D48E671616BE7D0088A3A1 /* NSString+MD5Addition.m */,
+				09D48E681616BE7D0088A3A1 /* UIDevice+IdentifierAddition.h */,
+				09D48E691616BE7D0088A3A1 /* UIDevice+IdentifierAddition.m */,
+			);
+			name = UDID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +262,8 @@
 				09929A3D16168CC7002D900B /* FSN_categories.m in Sources */,
 				09929A3E16168CC7002D900B /* FSNConnection.m in Sources */,
 				09929A3F16168CC7002D900B /* FSNData.m in Sources */,
+				09D48E6A1616BE7D0088A3A1 /* NSString+MD5Addition.m in Sources */,
+				09D48E6B1616BE7D0088A3A1 /* UIDevice+IdentifierAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
