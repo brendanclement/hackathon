@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface MusicPlayerViewController : UIViewController <UIGestureRecognizerDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
+@interface MusicPlayerViewController : UIViewController <UIGestureRecognizerDelegate, UIPickerViewDelegate, UIPickerViewDataSource> {
+    int recommendedIndex;
+    BOOL recommendationsAreUp;
+    int currentSongIndex;
+    BOOL playedPastFortyFive;
+    NSDictionary *nextSong;
+    float distance;
+}
 
 @property (nonatomic, weak) IBOutlet UIButton *playPauseButton;
 @property (nonatomic, weak) IBOutlet UIButton *rewindButton;
@@ -32,9 +40,18 @@
 
 @property (nonatomic, weak) IBOutlet UIPickerView *locationPickerView;
 
+@property (nonatomic, weak) IBOutlet UIView *recommendationsView;
+@property (nonatomic, weak) IBOutlet UILabel *recommendedArtist;
+@property (nonatomic, weak) IBOutlet UILabel *recommendedSong;
+@property (weak, nonatomic) IBOutlet UIButton *recommendedPlayButton;
+@property (nonatomic, strong) NSMutableArray *recommendedArray;
+@property (nonatomic, strong) NSTimer *recommendedTimer;
+@property (nonatomic, strong) AVAudioPlayer *previewPlayer;
+
 - (IBAction)buttonPressed:(id)sender;
 - (IBAction)seekSliderDidChange:(id)sender;
 - (void)handleTapGesture:(id)sender;
+- (void)previewWasTapped:(id)sender;
 
 - (void)musicDidNavigate;
 - (void)musicDidChangeState;

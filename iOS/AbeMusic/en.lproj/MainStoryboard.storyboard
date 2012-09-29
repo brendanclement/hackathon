@@ -133,10 +133,10 @@
                                 </connections>
                             </pickerView>
                             <view alpha="0.70000000000000007" contentMode="scaleToFill" id="E6C-ZG-l5e">
-                                <rect key="frame" x="0.0" y="319" width="320" height="141"/>
+                                <rect key="frame" x="0.0" y="319" width="320" height="104"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eBo-ib-dxY">
-                                        <rect key="frame" x="20" y="8" width="70" height="70"/>
+                                        <rect key="frame" x="20" y="4.5" width="60" height="60"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" image="rewindButton.png">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -150,9 +150,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2Gr-ig-YS7">
-                                        <rect key="frame" x="125" y="8" width="70" height="70"/>
+                                        <rect key="frame" x="130" y="4.5" width="60" height="60"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Button" image="playButton.png">
+                                        <state key="normal" title="Button" image="pauseButton.png">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -164,7 +164,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RkJ-v9-3mI">
-                                        <rect key="frame" x="230" y="8" width="70" height="70"/>
+                                        <rect key="frame" x="240" y="4.5" width="60" height="60"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" image="fastForwardButton.png">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -179,6 +179,59 @@
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="0be-p7-6tW">
+                                <rect key="frame" x="46" y="422" width="228" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rH1-mR-f8t">
+                                        <rect key="frame" x="8" y="8" width="111" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yAk-E3-cBg">
+                                        <rect key="frame" x="127" y="4" width="107" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Adq-DM-NQj">
+                                        <rect key="frame" x="8" y="40" width="36" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="pauseButton.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="M2L-p2-8eb" eventType="touchUpInside" id="Fh8-Qq-fWP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rzZ-8Q-Epz">
+                                        <rect key="frame" x="166" y="43" width="57" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="buyButton.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Recommended:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="koh-o0-YMs">
+                                        <rect key="frame" x="0.0" y="-5" width="75" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView contentMode="scaleToFill" id="woc-KM-MEL">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
@@ -241,11 +294,15 @@
                     <connections>
                         <outlet property="albumArtImageView" destination="woc-KM-MEL" id="u2N-hu-fGd"/>
                         <outlet property="albumLabel" destination="de6-ol-Dvh" id="zhJ-Ye-UFc"/>
-                        <outlet property="artistLabel" destination="7k6-Rj-cNf" id="N5p-2D-wnd"/>
+                        <outlet property="artistLabel" destination="7k6-Rj-cNf" id="oKf-1g-gzs"/>
                         <outlet property="fastForwardButton" destination="RkJ-v9-3mI" id="3eS-HQ-pk3"/>
                         <outlet property="locationButton" destination="D7a-5L-eQI" id="Ngl-nh-FbL"/>
                         <outlet property="locationPickerView" destination="GnP-Ab-ICH" id="Hbf-0i-SWn"/>
                         <outlet property="playPauseButton" destination="2Gr-ig-YS7" id="PT6-5j-xgq"/>
+                        <outlet property="recommendationsView" destination="0be-p7-6tW" id="2bL-GJ-3mK"/>
+                        <outlet property="recommendedArtist" destination="rH1-mR-f8t" id="LK0-y0-sY7"/>
+                        <outlet property="recommendedPlayButton" destination="Adq-DM-NQj" id="snw-tO-190"/>
+                        <outlet property="recommendedSong" destination="yAk-E3-cBg" id="09C-v5-ibo"/>
                         <outlet property="rewindButton" destination="eBo-ib-dxY" id="jNm-of-K3O"/>
                         <outlet property="seekSlider" destination="UkC-UV-MsK" id="DeM-hN-2Jb"/>
                         <outlet property="songControl" destination="E6C-ZG-l5e" id="zWr-Fu-l1I"/>
@@ -277,8 +334,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="buyButton.png" width="68" height="37"/>
         <image name="fastForwardButton.png" width="256" height="256"/>
-        <image name="playButton.png" width="256" height="256"/>
+        <image name="pauseButton.png" width="256" height="256"/>
         <image name="rewindButton.png" width="256" height="256"/>
     </resources>
     <classes>
@@ -294,6 +352,10 @@
                 <relationship kind="outlet" name="locationButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="locationPickerView" candidateClass="UIPickerView"/>
                 <relationship kind="outlet" name="playPauseButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="recommendationsView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="recommendedArtist" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="recommendedPlayButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="recommendedSong" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="rewindButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="seekSlider" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="songControl" candidateClass="UIView"/>

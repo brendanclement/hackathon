@@ -27,8 +27,10 @@
 		09929A3D16168CC7002D900B /* FSN_categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 09929A3816168CC7002D900B /* FSN_categories.m */; };
 		09929A3E16168CC7002D900B /* FSNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 09929A3A16168CC7002D900B /* FSNConnection.m */; };
 		09929A3F16168CC7002D900B /* FSNData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09929A3C16168CC7002D900B /* FSNData.m */; };
+		099CAFEE16178109003CE071 /* buyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 099CAFED16178109003CE071 /* buyButton.png */; };
 		09D48E6A1616BE7D0088A3A1 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D48E671616BE7D0088A3A1 /* NSString+MD5Addition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		09D48E6B1616BE7D0088A3A1 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D48E691616BE7D0088A3A1 /* UIDevice+IdentifierAddition.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		09D48E71161767730088A3A1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D48E70161767730088A3A1 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,10 +63,12 @@
 		09929A3A16168CC7002D900B /* FSNConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNConnection.m; path = src/FSNConnection.m; sourceTree = "<group>"; };
 		09929A3B16168CC7002D900B /* FSNData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSNData.h; path = src/FSNData.h; sourceTree = "<group>"; };
 		09929A3C16168CC7002D900B /* FSNData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNData.m; path = src/FSNData.m; sourceTree = "<group>"; };
+		099CAFED16178109003CE071 /* buyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buyButton.png; path = Resources/images/buyButton.png; sourceTree = "<group>"; };
 		09D48E661616BE7D0088A3A1 /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5Addition.h"; path = "udid/NSString+MD5Addition.h"; sourceTree = "<group>"; };
 		09D48E671616BE7D0088A3A1 /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5Addition.m"; path = "udid/NSString+MD5Addition.m"; sourceTree = "<group>"; };
 		09D48E681616BE7D0088A3A1 /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+IdentifierAddition.h"; path = "udid/UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
 		09D48E691616BE7D0088A3A1 /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+IdentifierAddition.m"; path = "udid/UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
+		09D48E70161767730088A3A1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D48E71161767730088A3A1 /* AVFoundation.framework in Frameworks */,
 				09929A281616789E002D900B /* MediaPlayer.framework in Frameworks */,
 				0986E10216166A8800CF7A2D /* UIKit.framework in Frameworks */,
 				0986E10416166A8800CF7A2D /* Foundation.framework in Frameworks */,
@@ -85,6 +90,7 @@
 		0986E0F216166A8800CF7A2D = {
 			isa = PBXGroup;
 			children = (
+				09D48E70161767730088A3A1 /* AVFoundation.framework */,
 				0986E10716166A8800CF7A2D /* AbeMusic */,
 				0986E10016166A8800CF7A2D /* Frameworks */,
 				0986E0FE16166A8800CF7A2D /* Products */,
@@ -153,6 +159,7 @@
 		09929A2A16167BEB002D900B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				099CAFED16178109003CE071 /* buyButton.png */,
 				09929A2B16167C09002D900B /* playButton.png */,
 				09929A2C16167C09002D900B /* fastForwardButton.png */,
 				09929A2D16167C09002D900B /* pauseButton.png */,
@@ -245,6 +252,7 @@
 				09929A3016167C09002D900B /* fastForwardButton.png in Resources */,
 				09929A3116167C09002D900B /* pauseButton.png in Resources */,
 				09929A3216167C09002D900B /* rewindButton.png in Resources */,
+				099CAFEE16178109003CE071 /* buyButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
