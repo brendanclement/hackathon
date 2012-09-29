@@ -12,6 +12,9 @@
     UIButton *buttonPressed;
 }
 
+@property (nonatomic, strong) NSMutableArray *allSongs;
+@property (nonatomic, strong) NSData *json;
+
 - (IBAction)buttonPressed:(id)sender;
 
 @end

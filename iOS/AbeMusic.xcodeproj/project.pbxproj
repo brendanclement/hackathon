@@ -24,6 +24,9 @@
 		09929A3016167C09002D900B /* fastForwardButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 09929A2C16167C09002D900B /* fastForwardButton.png */; };
 		09929A3116167C09002D900B /* pauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 09929A2D16167C09002D900B /* pauseButton.png */; };
 		09929A3216167C09002D900B /* rewindButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 09929A2E16167C09002D900B /* rewindButton.png */; };
+		09929A3D16168CC7002D900B /* FSN_categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 09929A3816168CC7002D900B /* FSN_categories.m */; };
+		09929A3E16168CC7002D900B /* FSNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 09929A3A16168CC7002D900B /* FSNConnection.m */; };
+		09929A3F16168CC7002D900B /* FSNData.m in Sources */ = {isa = PBXBuildFile; fileRef = 09929A3C16168CC7002D900B /* FSNData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,12 @@
 		09929A2C16167C09002D900B /* fastForwardButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fastForwardButton.png; path = Resources/images/fastForwardButton.png; sourceTree = "<group>"; };
 		09929A2D16167C09002D900B /* pauseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pauseButton.png; path = Resources/images/pauseButton.png; sourceTree = "<group>"; };
 		09929A2E16167C09002D900B /* rewindButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rewindButton.png; path = Resources/images/rewindButton.png; sourceTree = "<group>"; };
+		09929A3716168CC7002D900B /* FSN_categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSN_categories.h; path = src/FSN_categories.h; sourceTree = "<group>"; };
+		09929A3816168CC7002D900B /* FSN_categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSN_categories.m; path = src/FSN_categories.m; sourceTree = "<group>"; };
+		09929A3916168CC7002D900B /* FSNConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSNConnection.h; path = src/FSNConnection.h; sourceTree = "<group>"; };
+		09929A3A16168CC7002D900B /* FSNConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNConnection.m; path = src/FSNConnection.m; sourceTree = "<group>"; };
+		09929A3B16168CC7002D900B /* FSNData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSNData.h; path = src/FSNData.h; sourceTree = "<group>"; };
+		09929A3C16168CC7002D900B /* FSNData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSNData.m; path = src/FSNData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,7 @@
 				0986E11D16166A8800CF7A2D /* ViewController.m */,
 				09929A23161675AE002D900B /* MusicPlayerViewController.h */,
 				09929A24161675AE002D900B /* MusicPlayerViewController.m */,
+				09929A4016168CC9002D900B /* networking */,
 				09929A2916167BE1002D900B /* Resources */,
 				0986E10816166A8800CF7A2D /* Supporting Files */,
 			);
@@ -142,6 +152,19 @@
 				09929A2E16167C09002D900B /* rewindButton.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		09929A4016168CC9002D900B /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				09929A3716168CC7002D900B /* FSN_categories.h */,
+				09929A3816168CC7002D900B /* FSN_categories.m */,
+				09929A3916168CC7002D900B /* FSNConnection.h */,
+				09929A3A16168CC7002D900B /* FSNConnection.m */,
+				09929A3B16168CC7002D900B /* FSNData.h */,
+				09929A3C16168CC7002D900B /* FSNData.m */,
+			);
+			name = networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +241,9 @@
 				0986E11216166A8800CF7A2D /* AppDelegate.m in Sources */,
 				0986E11E16166A8800CF7A2D /* ViewController.m in Sources */,
 				09929A25161675AE002D900B /* MusicPlayerViewController.m in Sources */,
+				09929A3D16168CC7002D900B /* FSN_categories.m in Sources */,
+				09929A3E16168CC7002D900B /* FSNConnection.m in Sources */,
+				09929A3F16168CC7002D900B /* FSNData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +324,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AbeMusic/AbeMusic-Prefix.pch";
 				INFOPLIST_FILE = "AbeMusic/AbeMusic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -309,6 +336,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AbeMusic/AbeMusic-Prefix.pch";
 				INFOPLIST_FILE = "AbeMusic/AbeMusic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -197,24 +197,33 @@
                                     <constraint firstItem="eBo-ib-dxY" firstAttribute="leading" secondItem="E6C-ZG-l5e" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3KB-tC-CZj"/>
                                     <constraint firstItem="2Gr-ig-YS7" firstAttribute="bottom" secondItem="eBo-ib-dxY" secondAttribute="bottom" type="default" id="4RE-UW-oUz"/>
                                     <constraint firstItem="RkJ-v9-3mI" firstAttribute="bottom" secondItem="2Gr-ig-YS7" secondAttribute="bottom" type="default" id="BsE-4x-4sx"/>
-                                    <constraint firstItem="RkJ-v9-3mI" firstAttribute="centerY" secondItem="E6C-ZG-l5e" secondAttribute="centerY" type="default" id="CYc-qo-4aY"/>
                                     <constraint firstItem="RkJ-v9-3mI" firstAttribute="top" secondItem="2Gr-ig-YS7" secondAttribute="top" type="default" id="IJe-hs-HUw"/>
                                     <constraint firstAttribute="trailing" secondItem="RkJ-v9-3mI" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="IYi-nS-bQ4"/>
-                                    <constraint firstItem="2Gr-ig-YS7" firstAttribute="centerX" secondItem="E6C-ZG-l5e" secondAttribute="centerX" type="default" id="abj-Ay-AMe"/>
+                                    <constraint firstItem="eBo-ib-dxY" firstAttribute="top" secondItem="E6C-ZG-l5e" secondAttribute="top" constant="8" id="lu7-eP-R0C"/>
+                                    <constraint firstItem="2Gr-ig-YS7" firstAttribute="centerX" secondItem="E6C-ZG-l5e" secondAttribute="centerX" type="default" id="obF-2H-XvB"/>
                                     <constraint firstItem="2Gr-ig-YS7" firstAttribute="top" secondItem="eBo-ib-dxY" secondAttribute="top" type="default" id="wWt-JW-8nw"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="woc-KM-MEL">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="A7G-OI-ZEv"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="E6C-ZG-l5e" firstAttribute="top" secondItem="csN-oM-8p3" secondAttribute="top" constant="380" id="7bb-9Q-ChA"/>
-                            <constraint firstItem="E6C-ZG-l5e" firstAttribute="bottom" secondItem="csN-oM-8p3" secondAttribute="bottom" type="default" id="c9m-gF-E2d"/>
+                            <constraint firstItem="woc-KM-MEL" firstAttribute="trailing" secondItem="csN-oM-8p3" secondAttribute="trailing" type="default" id="2P7-Oc-306"/>
+                            <constraint firstItem="woc-KM-MEL" firstAttribute="leading" secondItem="csN-oM-8p3" secondAttribute="leading" type="default" id="EXm-Rd-IDW"/>
+                            <constraint firstItem="woc-KM-MEL" firstAttribute="top" secondItem="csN-oM-8p3" secondAttribute="top" type="default" id="cLn-F7-bdv"/>
+                            <constraint firstItem="E6C-ZG-l5e" firstAttribute="bottom" secondItem="csN-oM-8p3" secondAttribute="bottom" type="default" id="jJq-Vi-g3k"/>
+                            <constraint firstItem="E6C-ZG-l5e" firstAttribute="top" secondItem="csN-oM-8p3" secondAttribute="top" constant="319" id="wlI-5c-Kx3"/>
                             <constraint firstItem="E6C-ZG-l5e" firstAttribute="trailing" secondItem="csN-oM-8p3" secondAttribute="trailing" type="default" id="yzB-lF-JDo"/>
                             <constraint firstItem="E6C-ZG-l5e" firstAttribute="leading" secondItem="csN-oM-8p3" secondAttribute="leading" type="default" id="z7y-sL-oYY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fEv-3C-9V2"/>
                     <connections>
+                        <outlet property="albumArtImageView" destination="woc-KM-MEL" id="u2N-hu-fGd"/>
                         <outlet property="fastForwardButton" destination="RkJ-v9-3mI" id="3eS-HQ-pk3"/>
                         <outlet property="playPauseButton" destination="2Gr-ig-YS7" id="PT6-5j-xgq"/>
                         <outlet property="rewindButton" destination="eBo-ib-dxY" id="jNm-of-K3O"/>
@@ -253,6 +262,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MusicPlayerViewController.h"/>
             <relationships>
                 <relationship kind="action" name="buttonPressed:"/>
+                <relationship kind="outlet" name="albumArtImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="fastForwardButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="playPauseButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="rewindButton" candidateClass="UIButton"/>
